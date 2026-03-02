@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmX Studios - Professional Film Production</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="dark-mode">
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-camera-reels"></i> Film<span>X</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-main" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-main" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item ms-3">
+                        <a id="themeToggle" title="Toggle Theme"><i class="bi bi-sun"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title navbar-brand" id="mobileMenuLabel"><i class="bi bi-camera-reels"></i>
+                Film<span>X</span></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-start">
+                <li class="nav-item w-100"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item w-100 mt-2"><a class="nav-link themeToggle" style="cursor:pointer;"><i
+                            class="bi bi-sun me-2"></i> Toggle Theme</a></li>
+                <li class="nav-item mt-4 w-100"><a class="btn btn-outline-main d-block w-100 mb-2"
+                        href="login.html">Login</a></li>
+                <li class="nav-item w-100"><a class="btn btn-main d-block w-100" href="dashboard.html">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section">
+        <!-- 3D / High Quality Video Background -->
+        <video autoplay loop muted playsinline class="hero-bg-video" poster="assets/images/hero-bg.png">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-1610-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-1 hero-content animate-up">
+            <h1>Bringing Stories To Life On The Big Screen</h1>
+            <p>Award-winning film production, stunning 3D visual effects, and breathtaking storytelling. We craft
+                cinematic experiences that captivate and inspire audiences worldwide.</p>
+            <div class="mt-4">
+                <a href="portfolio.html" class="btn btn-main me-3 btn-lg shadow">View Projects</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg rounded-pill px-4 fw-bold shadow">Contact
+                    Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Company -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assets/images/camera.png" alt="High End Cinema Camera"
+                        class="img-fluid rounded-4 shadow-lg card-3d w-100">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h6 class="text-uppercase fw-bold" style="color: var(--secondary); letter-spacing: 2px;">About Us
+                    </h6>
+                    <h2 class="display-5 fw-bold mb-4">Mastering the Art of Motion Pictures</h2>
+                    <p class="mb-4 text-muted" style="font-size: 1.1rem; line-height: 1.8;">
+                        With over a decade of industry expertise, FilmX Studios is a premier 3D and live-action
+                        production company. We specialize in producing groundbreaking films, high-octane commercials,
+                        and cutting-edge visual effects.
+                    </p>
+                    <ul class="list-unstyled mb-4 text-muted">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Innovative 3D & VR
+                            Experiences</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Industry-leading
+                            Cinematography</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Award-Winning
+                            Directors</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-outline-main">Discover More <i
+                            class="bi bi-arrow-right list"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Trusted Partners -->
+    <section class="py-5 border-top border-bottom"
+        style="background-color: var(--primary); border-color: rgba(255,255,255,0.05) !important;">
+        <div class="container py-4 text-center">
+            <h6 class="text-uppercase fw-bold text-muted mb-4" style="letter-spacing: 2px;">Trusted By Global Brands
+            </h6>
+            <div class="row align-items-center justify-content-center opacity-50 g-4">
+                <div class="col-4 col-md-2 col-lg-2">
+                    <i class="bi bi-apple fs-1 text-white"></i>
+                </div>
+                <div class="col-4 col-md-2 col-lg-2">
+                    <i class="bi bi-google fs-1 text-white"></i>
+                </div>
+                <div class="col-4 col-md-2 col-lg-2">
+                    <i class="bi bi-spotify fs-1 text-white"></i>
+                </div>
+                <div class="col-4 col-md-2 col-lg-2">
+                    <i class="bi bi-amazon fs-1 text-white"></i>
+                </div>
+                <div class="col-4 col-md-2 col-lg-2">
+                    <i class="bi bi-microsoft fs-1 text-white"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Featured Films -->
+    <section class="py-5 bg-light-custom">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase fw-bold" style="color: var(--secondary); letter-spacing: 2px;">Portfolio</h6>
+                <h2 class="fw-bold">Our Featured Masterpieces</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-3d h-100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fG1vdmllfGVufDB8fHx8MTcxMTMwNzI4Nnww&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Film 1">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">The Silent Horizon</h4>
+                            <p class="text-muted small mb-0">Sci-Fi Thriller • 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-3d h-100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fG1vdmllfGVufDB8fHx8MTcxMTMwNzI4Nnww&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Film 2">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">Echoes of Time</h4>
+                            <p class="text-muted small mb-0">Action Drama • 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-3d h-100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDh8fGNpbmVtYXxlbnwwfHx8fDE3MTEzMDczMDB8MA&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Film 3">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">Neon City</h4>
+                            <p class="text-muted small mb-0">Cyberpunk Doc • 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="portfolio.html" class="btn btn-main">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Services Overview -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase fw-bold" style="color: var(--secondary); letter-spacing: 2px;">What We Do</h6>
+                <h2 class="fw-bold">Comprehensive Production Services</h2>
+            </div>
+            <div class="row g-4 pt-3">
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 text-center p-4">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-camera-video"></i>
+                        </div>
+                        <h4 class="fw-bold mt-3">Film Production</h4>
+                        <p class="text-muted mt-2">End-to-end 3D and live-action cinematic project handling.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 text-center p-4">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-magic"></i>
+                        </div>
+                        <h4 class="fw-bold mt-3">VFX & 3D Animation</h4>
+                        <p class="text-muted mt-2">Mind-bending visual effects crafted by elite 3D artists.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 text-center p-4">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-scissors"></i>
+                        </div>
+                        <h4 class="fw-bold mt-3">Post Production</h4>
+                        <p class="text-muted mt-2">Color grading, editing, and professional sound design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-outline-main">Explore All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Behind The Scenes -->
+    <section class="py-5 bg-light-custom">
+        <div class="container py-5">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assets/images/vfx.png" alt="Behind the scenes VFX"
+                        class="img-fluid rounded-4 shadow-lg card-3d w-100">
+                </div>
+                <div class="col-lg-6 pe-lg-5">
+                    <h6 class="text-uppercase fw-bold" style="color: var(--secondary); letter-spacing: 2px;">Behind The
+                        Magic</h6>
+                    <h2 class="display-6 fw-bold mb-4">Inside Our VFX Studio</h2>
+                    <p class="mb-4 text-muted">
+                        See how our world-class visual artists bring the impossible to life. From motion capture
+                        tracking to hyper-realistic rendering, our pipeline is built for efficiency and awe-inspiring
+                        aesthetic quality.
+                    </p>
+                    <a href="about.html" class="btn btn-main">Meet Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Testimonials -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase fw-bold" style="color: var(--secondary); letter-spacing: 2px;">Reviews</h6>
+                <h2 class="fw-bold">What Directors Say</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5">
+                    <div class="card card-3d p-4 border-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-star-fill text-warning me-1"></i>
+                            <i class="bi bi-star-fill text-warning me-1"></i>
+                            <i class="bi bi-star-fill text-warning me-1"></i>
+                            <i class="bi bi-star-fill text-warning me-1"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="fst-italic text-muted">"Working with FilmX was an absolute dream. Their 3D team
+                            delivered visuals that completely exceeded our original storyboards. True professionals."
+                        </p>
+                        <div class="mt-3 d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="Avatar" class="rounded-circle me-3"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Johnathan Doe</h6>
+                                <small class="text-muted">Creative Director</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card card-3d p-4 border-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-star-fill text-warning me-1"></i>
+                            <i class="bi bi-star-fill text-warning me-1"></i>
+                            <i class="bi bi-star-fill text-warning me-1"></i>
+                            <i class="bi bi-star-fill text-warning me-1"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="fst-italic text-muted">"Their state-of-the-art camera equipment and experienced crew
+                            made our chaotic schedule manageable. The final product was stunning."</p>
+                        <div class="mt-3 d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="Avatar" class="rounded-circle me-3"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Sarah Jenkins</h6>
+                                <small class="text-muted">Executive Producer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Latest News & Insights -->
+    <section class="py-5 bg-light-custom border-top" style="border-color: rgba(0,0,0,0.05);">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase fw-bold" style="color: var(--secondary); letter-spacing: 2px;">Insights</h6>
+                <h2 class="fw-bold">Latest From Our Studio</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                                class="card-img-top" alt="News 1">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-secondary mb-2 px-2 py-1"
+                                style="background-color: var(--secondary) !important;">Technology</span>
+                            <h5 class="fw-bold mb-3">Upgrading to 12K: The Future of Virtual Production</h5>
+                            <p class="text-muted small mb-0">Discover how our new LED volume stage is revolutionizing
+                                the way we shoot sci-fi content in real-time.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <a href="#" class="text-decoration-none fw-bold" style="color: var(--text-dark);">Read
+                                Article <i class="bi bi-arrow-right list"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDh8fG1vdmllfGVufDB8fHx8MTcxMTMwNzI4Nnww&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="News 2">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-secondary mb-2 px-2 py-1"
+                                style="background-color: var(--secondary) !important;">Awards</span>
+                            <h5 class="fw-bold mb-3">FilmX Studio Wins Best VFX at Global Cinema Awards</h5>
+                            <p class="text-muted small mb-0">Our lead compositor shares the breakdown of the
+                                award-winning sequences from 'The Silent Horizon'.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <a href="#" class="text-decoration-none fw-bold" style="color: var(--text-dark);">Read
+                                Article <i class="bi bi-arrow-right list"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fGNpbmVtYXxlbnwwfHx8fDE3MTEzMDczMDB8MA&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="News 3">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-secondary mb-2 px-2 py-1"
+                                style="background-color: var(--secondary) !important;">Behind The Scenes</span>
+                            <h5 class="fw-bold mb-3">Color Grading 'Neon City': Creating the Cyberpunk Aesthetic</h5>
+                            <p class="text-muted small mb-0">A deep dive into the color suites at FilmX, exploring the
+                                DVL luts crafted uniquely for our newest documentary.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <a href="#" class="text-decoration-none fw-bold" style="color: var(--text-dark);">Read
+                                Article <i class="bi bi-arrow-right list"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-main">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Call To Action -->
+    <section class="py-5" style="background: var(--bg-gradient); color: white;">
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready To Shoot Your Masterpiece?</h2>
+            <p class="lead mb-5 max-w-700 mx-auto" style="opacity: 0.9;">Contact our team today for a consultation or to
+                request a quote tailored to your exact production needs.</p>
+            <a href="contact.html" class="btn btn-main btn-lg px-5">Let's Talk</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="fw-bold mb-4" style="color: var(--tertiary);">
+                        <i class="bi bi-camera-reels me-2"></i>Film<span style="color: var(--secondary);">X</span>
+                    </h4>
+                    <p class="mb-4" style="color: #a8b2d1;">Your premier partner in cinematic storytelling, specializing
+                        in advanced 3D visual effects and live-action artistry.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Company</h5>
+                    <a href="about.html" class="footer-link d-block">About Us</a>
+                    <a href="portfolio.html" class="footer-link d-block">Portfolio</a>
+                    <a href="services.html" class="footer-link d-block">Services</a>
+                    <a href="#" class="footer-link d-block">Careers</a>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Support</h5>
+                    <a href="contact.html" class="footer-link d-block">Contact</a>
+                    <a href="#" class="footer-link d-block">FAQ</a>
+                    <a href="#" class="footer-link d-block">Privacy Policy</a>
+                    <a href="#" class="footer-link d-block">Terms of Service</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Newsletter</h5>
+                    <p style="color: #a8b2d1;">Subscribe to get the latest news and production updates.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control rounded-pill border-0" placeholder="Your Email">
+                        <button type="submit" class="btn btn-main">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top mt-5 pt-4 text-center" style="border-color: rgba(255,255,255,0.1) !important;">
+                <p class="mb-0" style="color: #a8b2d1;">&copy; 2026 FilmX Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

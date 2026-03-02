@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - FilmX Studios</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="dark-mode">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-camera-reels"></i> Film<span>X</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-main" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-main" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item ms-3">
+                        <a id="themeToggle" title="Toggle Theme"><i class="bi bi-sun"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title navbar-brand" id="mobileMenuLabel"><i class="bi bi-camera-reels"></i>
+                Film<span>X</span></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-start">
+                <li class="nav-item w-100"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item w-100"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item w-100 mt-2"><a class="nav-link themeToggle" style="cursor:pointer;"><i
+                            class="bi bi-sun me-2"></i> Toggle Theme</a></li>
+                <li class="nav-item mt-4 w-100"><a class="btn btn-outline-main d-block w-100 mb-2"
+                        href="login.html">Login</a></li>
+                <li class="nav-item w-100"><a class="btn btn-main d-block w-100" href="dashboard.html">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="py-5" style="background: var(--bg-gradient); color: white;">
+        <div class="container py-5 text-center mt-4">
+            <h1 class="display-4 fw-bold">Our Portfolio</h1>
+            <p class="lead" style="color: #a8b2d1;">Award-winning visuals that defy reality.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-5">
+        <div class="container py-5">
+            <!-- Filter buttons (visual only for static html) -->
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-5" id="portfolio-filters">
+                <button class="btn btn-main filter-btn" data-filter="all">All Works</button>
+                <button class="btn btn-outline-main filter-btn" data-filter="commercials">Commercials</button>
+                <button class="btn btn-outline-main filter-btn" data-filter="vfx">Visual Effects</button>
+                <button class="btn btn-outline-main filter-btn" data-filter="features">Feature Films</button>
+                <button class="btn btn-outline-main filter-btn" data-filter="documentaries">Documentaries</button>
+            </div>
+
+            <div class="row g-4" id="portfolio-grid">
+                <!-- Item 1 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="features">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEzfHxjaW5lbWF8ZW58MHx8fHwxNzExMzA3MzAwfDA&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Cyberpunk Cityscape">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">The Silent Horizon</h4>
+                            <p class="text-muted small mb-3">Feature Film • Sci-Fi Thriller</p>
+                            <p class="text-muted">A groundbreaking 3D spectacle exploring the depth of human
+                                perseverance.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercials">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDh8fGNpbmVtYXxlbnwwfHx8fDE3MTEzMDczMDB8MA&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Automotive Ad">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">Velocity</h4>
+                            <p class="text-muted small mb-3">Commercial • Automotive</p>
+                            <p class="text-muted">High-octane car commercial shot entirely on a virtual production
+                                stage.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="vfx">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fG1vdmllfGVufDB8fHx8MTcxMTMwNzI4Nnww&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Fantasy Landscape">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">Echoes of Time</h4>
+                            <p class="text-muted small mb-3">Mini-Series • Fantasy</p>
+                            <p class="text-muted">Full CG environments crafted for a highly anticipated streaming
+                                series.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="documentaries">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fG1vdmllfGVufDB8fHx8MTcxMTMwNzI4Nnww&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Nature Doc">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">Wild Elements</h4>
+                            <p class="text-muted small mb-3">Documentary • Nature</p>
+                            <p class="text-muted">Breathtaking 8K cinematography capturing the untamed wilderness.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="vfx">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDh8fG1vdmllfGVufDB8fHx8MTcxMTMwNzI4Nnww&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Space VFX">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">Deep Space</h4>
+                            <p class="text-muted small mb-3">VFX Sequence • Feature Film</p>
+                            <p class="text-muted">Complex particle simulations and fluid dynamics for a pivotal scene.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="documentaries">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGZpbG0lMjBkaXJlY3RvcnxlbnwwfHx8fDE3MTEzMDk1NTB8MA&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Live Concert">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">Electric Night</h4>
+                            <p class="text-muted small mb-3">Live Event • Concert Film</p>
+                            <p class="text-muted">Multi-camera live production for a world-renowned pop artist.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercials">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNzExMzI1MTA0fDA&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Tech Commercial">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">NextGen Tech</h4>
+                            <p class="text-muted small mb-3">Commercial • Technology</p>
+                            <p class="text-muted">Sleek, modern commercial highlighting the features of a new
+                                smartphone.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 8 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="features">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fGNpbmVtYXxlbnwwfHx8fDE3MTEzMDczMDB8MA&ixlib=rb-4.0.3&q=80&w=600"
+                                class="card-img-top" alt="Drama Film">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">Midnight Sun</h4>
+                            <p class="text-muted small mb-3">Feature Film • Drama</p>
+                            <p class="text-muted">An emotional journey shot with natural lighting on 35mm film.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 9 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="vfx">
+                    <div class="card card-3d h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                                class="card-img-top" alt="Concept Art">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4 class="card-title fw-bold">Neon Dreams</h4>
+                            <p class="text-muted small mb-3">Visual Effects • Commercial</p>
+                            <p class="text-muted">A breathtaking conceptual ad showcasing our newest GPU rendering farm
+                                capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5" aria-label="Portfolio pagination">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a class="page-link bg-light-custom text-muted border-0" href="#"
+                            tabindex="-1" aria-disabled="true">Previous</a></li>
+                    <li class="page-item"><a class="page-link text-white shadow-sm"
+                            style="background-color: var(--secondary); border: none;" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link bg-light-custom" href="#"
+                            style="color: var(--text-dark); border: none;">2</a></li>
+                    <li class="page-item"><a class="page-link bg-light-custom" href="#"
+                            style="color: var(--text-dark); border: none;">3</a></li>
+                    <li class="page-item"><a class="page-link bg-light-custom" href="#"
+                            style="color: var(--text-dark); border: none;">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="fw-bold mb-4" style="color: var(--tertiary);">
+                        <i class="bi bi-camera-reels me-2"></i>Film<span style="color: var(--secondary);">X</span>
+                    </h4>
+                    <p class="mb-4" style="color: #a8b2d1;">Your premier partner in cinematic storytelling, specializing
+                        in advanced 3D visual effects and live-action artistry.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Company</h5>
+                    <a href="about.html" class="footer-link d-block">About Us</a>
+                    <a href="portfolio.html" class="footer-link d-block">Portfolio</a>
+                    <a href="services.html" class="footer-link d-block">Services</a>
+                    <a href="#" class="footer-link d-block">Careers</a>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Support</h5>
+                    <a href="contact.html" class="footer-link d-block">Contact</a>
+                    <a href="#" class="footer-link d-block">FAQ</a>
+                    <a href="#" class="footer-link d-block">Privacy Policy</a>
+                    <a href="#" class="footer-link d-block">Terms of Service</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Newsletter</h5>
+                    <p style="color: #a8b2d1;">Subscribe to get the latest news and production updates.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control rounded-pill border-0" placeholder="Your Email">
+                        <button type="submit" class="btn btn-main">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top mt-5 pt-4 text-center" style="border-color: rgba(255,255,255,0.1) !important;">
+                <p class="mb-0" style="color: #a8b2d1;">&copy; 2026 FilmX Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap 5 JS Bundle & Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FilmX Studios</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="dark-mode">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-camera-reels"></i> Film<span>X</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-main" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-main" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item ms-3">
+                        <a id="themeToggle" title="Toggle Theme"><i class="bi bi-sun"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title navbar-brand" id="mobileMenuLabel"><i class="bi bi-camera-reels"></i>
+                Film<span>X</span></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-start">
+                <li class="nav-item w-100"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item w-100"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item w-100"><a class="nav-link active" href="contact.html">Contact</a></li>
+                <li class="nav-item mt-4 w-100"><a class="btn btn-outline-main d-block w-100 mb-2"
+                        href="login.html">Login</a></li>
+                <li class="nav-item w-100"><a class="btn btn-main d-block w-100" href="dashboard.html">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="py-5" style="background: var(--bg-gradient); color: white;">
+        <div class="container py-5 text-center mt-4">
+            <h1 class="display-4 fw-bold">Get In Touch</h1>
+            <p class="lead" style="color: #a8b2d1;">Let's discuss your next big project.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Info Column -->
+                <div class="col-lg-5">
+                    <h6 class="text-uppercase fw-bold" style="color: var(--secondary); letter-spacing: 2px;">Contact
+                        Details</h6>
+                    <h2 class="display-6 fw-bold mb-4">We're Here To Help</h2>
+                    <p class="mb-5 text-muted">Whether you need a full production crew, state-of-the-art VFX, or simply
+                        want to inquire about our rates, our team is ready to assist you round the clock.</p>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="feature-icon-wrapper flex-shrink-0 m-0"
+                            style="width: 60px; height: 60px; font-size: 1.5rem;">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="fw-bold mb-1">Our Studio</h5>
+                            <p class="text-muted mb-0">123 Cinematic Ave, Hollywood, CA 90028</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="feature-icon-wrapper flex-shrink-0 m-0"
+                            style="width: 60px; height: 60px; font-size: 1.5rem;">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="fw-bold mb-1">Email Us</h5>
+                            <p class="text-muted mb-0">hello@filmxstudios.com</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="feature-icon-wrapper flex-shrink-0 m-0"
+                            style="width: 60px; height: 60px; font-size: 1.5rem;">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="fw-bold mb-1">Call Us</h5>
+                            <p class="text-muted mb-0">+1 (800) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="col-lg-7">
+                    <div class="card card-3d p-4 p-md-5 border-0">
+                        <h3 class="fw-bold mb-4">Send an Inquiry</h3>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label text-muted">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                    <div class="invalid-feedback">Please provide your first name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label text-muted">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                    <div class="invalid-feedback">Please provide your last name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label text-muted">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">Please provide a valid email.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label text-muted">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label text-muted">Subject</label>
+                                    <select class="form-select border-0 px-4 py-3 rounded-pill bg-light-custom"
+                                        id="subject" style="border: 1px solid rgba(255,255,255,0.1) !important;">
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Film Production">Film Production</option>
+                                        <option value="VFX/Animation">VFX & 3D Animation</option>
+                                        <option value="Post Production">Post Production</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label text-muted">Your Message</label>
+                                    <textarea class="form-control" id="message" rows="5" style="border-radius: 20px;"
+                                        required></textarea>
+                                    <div class="invalid-feedback">Please provide a message.</div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button
+                                        class="btn btn-main w-100 py-3 d-flex justify-content-center align-items-center gap-2"
+                                        type="submit">
+                                        Send Message <i class="bi bi-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Embedded Map Placeholder -->
+    <div class="w-100"
+        style="height: 400px; background: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;">
+        <!-- In a real scenario, put a Google Maps iframe here -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="fw-bold mb-4" style="color: var(--tertiary);">
+                        <i class="bi bi-camera-reels me-2"></i>Film<span style="color: var(--secondary);">X</span>
+                    </h4>
+                    <p class="mb-4" style="color: #a8b2d1;">Your premier partner in cinematic storytelling, specializing
+                        in advanced 3D visual effects and live-action artistry.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- ... footer links ... -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Company</h5>
+                    <a href="about.html" class="footer-link d-block">About Us</a>
+                    <a href="portfolio.html" class="footer-link d-block">Portfolio</a>
+                    <a href="services.html" class="footer-link d-block">Services</a>
+                    <a href="#" class="footer-link d-block">Careers</a>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Support</h5>
+                    <a href="contact.html" class="footer-link d-block">Contact</a>
+                    <a href="#" class="footer-link d-block">FAQ</a>
+                    <a href="#" class="footer-link d-block">Privacy Policy</a>
+                    <a href="#" class="footer-link d-block">Terms of Service</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Newsletter</h5>
+                    <p style="color: #a8b2d1;">Subscribe to get the latest news and production updates.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control rounded-pill border-0" placeholder="Your Email">
+                        <button type="submit" class="btn btn-main">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top mt-5 pt-4 text-center" style="border-color: rgba(255,255,255,0.1) !important;">
+                <p class="mb-0" style="color: #a8b2d1;">&copy; 2026 FilmX Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap 5 JS Bundle & Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
