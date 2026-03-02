@@ -31,7 +31,16 @@
             </button>
             <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item active" href="index.html">Main Home</a></li>
+                            <li><a class="dropdown-item" href="index-2.html">Home 2 (Showreel)</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
@@ -55,7 +64,16 @@
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav align-items-start">
-                <li class="nav-item w-100"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item dropdown w-100">
+                    <a class="nav-link dropdown-toggle active" href="#" id="mobileHomeDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu border-0" aria-labelledby="mobileHomeDropdown">
+                        <li><a class="dropdown-item active" href="index.html">Main Home</a></li>
+                        <li><a class="dropdown-item" href="index-2.html">Home 2 (Showreel)</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item w-100"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item w-100"><a class="nav-link" href="services.html">Services</a></li>
                 <li class="nav-item w-100"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
